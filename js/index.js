@@ -76,3 +76,5 @@ topHeaders[1].innerHTML = siteContent["main-content"]["about-h4"];
 let botHeaders = document.querySelectorAll(".top-content p");
 botHeaders[0].innerHTML = siteContent["main-content"]["features-content"];
 botHeaders[1].innerHTML = siteContent["main-content"]["about-content"];
+
+document.getElementById("middle-img").src = siteContent["main-content"]["middle-img-src"];
