@@ -73,6 +73,7 @@ ctaImg.src = siteContent.cta["img-src"];
 let topHead = document.querySelectorAll(".top-content h4");
 topHead[0].innerHTML = siteContent["main-content"]["features-h4"];
 topHead[1].innerHTML = siteContent["main-content"]["about-h4"];
+
 let topHeadText = document.querySelectorAll(".top-content p");
 topHeadText[0].innerHTML = siteContent["main-content"]["features-content"];
 topHeadText[1].innerHTML = siteContent["main-content"]["about-content"];
@@ -85,7 +86,16 @@ let botHead = document.querySelectorAll(".bottom-content h4");
 botHead[0].innerHTML = siteContent["main-content"]["services-h4"];
 botHead[1].innerHTML = siteContent["main-content"]["product-h4"];
 botHead[2].innerHTML = siteContent["main-content"]["vision-h4"];
+
 let botHeadText = document.querySelectorAll(".bottom-content p");
 botHeadText[0].innerHTML = siteContent["main-content"]["services-content"];
 botHeadText[1].innerHTML = siteContent["main-content"]["about-content"];
 botHeadText[2].innerHTML = siteContent["main-content"]["vision-content"];
+
+let contactHead = document.querySelector(".contact h4");
+contactHead.innerHTML = siteContent.contact["contact-h4"];
+
+let contactInfo = document.querySelectorAll(".contact p");
+contactInfo[0].innerHTML = siteContent.contact.address;
+contactInfo[1].innerHTML = siteContent.contact.phone;
+contactInfo[2].innerHTML = siteContent.contact.email;
