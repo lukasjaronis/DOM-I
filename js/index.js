@@ -68,6 +68,10 @@ document.querySelector("nav").appendChild(domINATOR);
 
 // cta 
 
+let ctaSection = document.querySelector('.cta');
+ctaSection.style.margin = "5rem";
+
+
 let ctaH1 = document.querySelector('.cta-text h1');
 siteContent.cta.h1 = siteContent.cta.h1.split(" ").join("<br>");
 ctaH1.innerHTML = siteContent.cta.h1;
