@@ -56,6 +56,16 @@ aTagText.forEach((element, index) => {
   return element.style.color = 'green';
 })
 
+
+let domINATOR = document.createElement("a");
+let domINATORText = document.createTextNode("domINATOR");
+domINATOR.prepend(domINATORText);
+domINATOR.style.color = "red";
+domINATOR.href = "www.google.com";
+domINATOR.style.fontWeight = "900";
+
+document.querySelector("nav").appendChild(domINATOR);
+
 // cta 
 
 let ctaH1 = document.querySelector('.cta-text h1');
@@ -91,6 +101,8 @@ let botHeadText = document.querySelectorAll(".bottom-content p");
 botHeadText[0].innerHTML = siteContent["main-content"]["services-content"];
 botHeadText[1].innerHTML = siteContent["main-content"]["about-content"];
 botHeadText[2].innerHTML = siteContent["main-content"]["vision-content"];
+
+// contact + copyright
 
 let contactHead = document.querySelector(".contact h4");
 contactHead.innerHTML = siteContent.contact["contact-h4"];
