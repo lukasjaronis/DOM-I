@@ -40,3 +40,18 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// navbar
+
+let aTagText = document.querySelectorAll('nav a');
+console.log(aTagText);
+
+aTagText.forEach((element, index) => {
+  return element.innerHTML = siteContent.nav[`nav-item-${index + 1}`];
+})
+
+// navbar text to green
+
+aTagText.forEach((element, index) => {
+  return element.style.color = 'green';
+})
