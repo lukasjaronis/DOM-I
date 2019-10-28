@@ -55,3 +55,15 @@ aTagText.forEach((element, index) => {
 aTagText.forEach((element, index) => {
   return element.style.color = 'green';
 })
+
+// cta 
+
+let ctaH1 = document.querySelector('.cta-text h1');
+siteContent.cta.h1 = siteContent.cta.h1.split(" ").join("<br>");
+ctaH1.innerHTML = siteContent.cta.h1;
+
+let ctaBtn = document.querySelector(".cta-text button");
+ctaBtn.innerHTML = siteContent.cta.button;
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.src = siteContent.cta["img-src"];
