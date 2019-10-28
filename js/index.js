@@ -67,3 +67,12 @@ ctaBtn.innerHTML = siteContent.cta.button;
 
 let ctaImg = document.getElementById('cta-img');
 ctaImg.src = siteContent.cta["img-src"];
+
+// main content
+
+let topHeaders = document.querySelectorAll(".top-content h4");
+topHeaders[0].innerHTML = siteContent["main-content"]["features-h4"];
+topHeaders[1].innerHTML = siteContent["main-content"]["about-h4"];
+let botHeaders = document.querySelectorAll(".top-content p");
+botHeaders[0].innerHTML = siteContent["main-content"]["features-content"];
+botHeaders[1].innerHTML = siteContent["main-content"]["about-content"];
